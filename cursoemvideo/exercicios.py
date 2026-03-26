@@ -13,7 +13,26 @@ print('Você nasceu:', dia, mes, ano)
 
 #---------------------------
 
-n1 = float(input('Digite um número inteiro:'))
-n2 = float(input('Digite outro número:'))
+n1 = int(input('Digite um número inteiro:'))
+n2 = int(input('Digite outro número:'))
 
-print('A soma:', n1 + n2)
+soma = n1 + n2
+
+print(f'A soma de {n1} + {n2} é: {soma}')
+
+#----------------------------
+
+#aula 5 - lista de exercicio.
+
+#exercício 1
+
+print('Olá, mundo!')
+
+#exercício 2
+
+nome = input('Qual seu nome?')
+print(f'É um prazer conhecer você,{nome}!')
+
+
+
+

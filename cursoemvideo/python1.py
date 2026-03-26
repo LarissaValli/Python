@@ -4,4 +4,4 @@ peso = input('Qual seu peso')
 
 print(nome, idade, peso)
 
-#aula 5 - lista de exercicio.
+
