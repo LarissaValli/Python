@@ -55,7 +55,50 @@ print(f'{x} É letra? {l}')
 print(f'{x} É alphanumerico? {a}')
 print(f'{x} É letra maiuscula? {m}')
 
-#Exercício 3
+#Exercício - Operadores Aritméticos
+
+#exercício 1
+
+n = int(input('Digite um número: '))
+antecessor = n - 1
+sucessor = n + 1
+
+print(f'O número é {n}, seu antecessor é {antecessor} e seu sucessor {sucessor}')
+
+#exercício 2
+
+n = int(input('Digite um número: '))
+dobro = n * 2
+triplo = n * 3
+raizQuadrada = n ** (1/2)
+
+print(f'O dobro do número {n} é {dobro} o triplo {triplo} e a raiz quadrada é {raizQuadrada}')
+
+#exercício 3 
+
+n1 = float(input('Digite sua nota aqui:'))
+n2 = float(input('Digite a segunda nota: '))
+
+resultado = n1 + n2 / 2
+
+print(f'Sua nota média de {n1} + {n2} / 2 
+\n é de {resultado}')
+
+#exercício 4
+
+metros = int(input('Digite o metro: '))
+
+centimetros = metros * 100
+milimetros =  metros * 1000
+
+print(f'O valor do {metros} em centimetros é de {centimetros} e em milimetros {milimetros}')
+
+#exercício 5
+
+
+
+
+
 
 
 

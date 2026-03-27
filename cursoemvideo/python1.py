@@ -30,7 +30,11 @@ print(n.isupper())
 #---------------------------------------
 #           Operadores Aritméticos
 
-
+#Ordem de precedência
+#1 - ()
+#2 - **
+#3 - * / // %
+#4 - + - 
 
 
 
