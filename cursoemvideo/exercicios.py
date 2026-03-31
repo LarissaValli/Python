@@ -197,6 +197,19 @@ print(lista)
 
 #import pygame
 
+#Aula 9 -  Exercício 1
+
+nome = input('Digite seu nome completo: ')
+
+print(nome.upper())
+print(nome.lower())
+print(len(nome))
+print(nome.split)
+
+#Exercício 2
+
+
+
 
 
 

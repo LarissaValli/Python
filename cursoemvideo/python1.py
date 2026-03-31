@@ -22,6 +22,14 @@ import random
 num = random.randint(1, 10)
 print(num)
 
+#------------------------------------------
+#             Manipulando texto
+
+frase = 'Curso em video Python'
+print(frase.count('o'))
+
+
+
 
 
 
