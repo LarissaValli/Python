@@ -79,14 +79,13 @@ print(f'O dobro do número {n} é {dobro} o triplo {triplo} e a raiz quadrada é
 n1 = float(input('Digite sua nota aqui:'))
 n2 = float(input('Digite a segunda nota: '))
 
-resultado = n1 + n2 / 2
+resultado = (n1 + n2) / 2
 
-print(f'Sua nota média de {n1} + {n2} / 2 
-\n é de {resultado}')
+print(f'Sua nota média de {n1} + {n2} / 2 é de {resultado}')
 
 #exercício 4
 
-metros = int(input('Digite o metro: '))
+metros = float(input('Digite o metro: '))
 
 centimetros = metros * 100
 milimetros =  metros * 1000
@@ -94,6 +93,76 @@ milimetros =  metros * 1000
 print(f'O valor do {metros} em centimetros é de {centimetros} e em milimetros {milimetros}')
 
 #exercício 5
+
+num = int(input('Digite um número para ver sua tabuada: '))
+print('-' * 12)
+
+print(f'{num} x {1} = {num*1}')
+print(f'{num} x {2} = {num*2}')
+print(f'{num} x {3} = {num*3}')
+print(f'{num} x {4} = {num*4}')
+print(f'{num} x {5} = {num*5}')
+print(f'{num} x {6} = {num*6}')
+print(f'{num} x {7} = {num*7}')
+print(f'{num} x {8} = {num*8}')
+print(f'{num} x {9} = {num*9}') 
+print(f'{num} x {10} = {num*10}')
+
+print('-' * 12)
+
+#Exercício 6
+
+carteira = float(input('Quanto que você tem na carteira? R$'))
+#dolar hoje - 5,23
+dol = (carteira / 5.23)
+
+print(f'Você tem na carteira R${carteira:.2f}, dá para comprar US${dol:.2f} doláres.')
+
+#Exercício 7
+
+larg = float(input('Qual a largura da parede: '))
+alt = float(input('Qual a altura da parede: '))
+
+area = larg * alt
+print(f'Sua parede tem a dimensão de {larg} x {alt} e sua área é de {area}m2.')
+
+tinta = area / 2
+
+print(f'Para pintar essa parede, você precisará de {tinta}l de tinta.')
+
+#Exercício 8
+
+preco = float(input('O preço do produto é: R$ '))
+novoPreco = (preco * 5 / 100)
+
+print(f'O preço do produto era de R${preco}, com o desconto de 5% ficou R${novoPreco}.')
+
+#Exercício 9
+
+salario = float(input('Qual o salário do funcionário R$: '))
+novoSalario = salario + (salario * 15 / 100)
+
+print(f'O funcionário receberá um novo salário de 15% de aumento. Salário anterior de R${salario:.2f} foi para R${novoSalario:.2f}.')
+
+#Exercício 10
+
+celsius = float(input('Digite a temperatura em Celsius: '))
+fahrenheit = ((9 * celsius / 5) + 32)
+print(f'A temperatura de {celsius}°C corresponde a {fahrenheit}°F!' )
+
+#Exercício 11
+
+km = float(input('Quantidade percorrido de Km'))
+dias = int(input('Quantos dias o carro foi alugado: '))
+
+pagar = (dias * 60) + (km * 0.15)
+
+print(f'O total a pagar é de R${pagar:.2f}')
+
+
+
+
+
 
 
 
