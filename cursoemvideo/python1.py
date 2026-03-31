@@ -1,31 +1,3 @@
-nome = input('Qual seu nome?')
-idade = input('Quantos anos você tem?')
-peso = input('Qual seu peso')
-
-print(nome, idade, peso)
-
-#--------------------------
-#         Tipos primitivos
-
-n = float(input('Digite um número: '))
-
-print(n)
-
-n = input('Digite algo: ')
-print(n.isnumeric())
-#obs: Vai dizer se é possível converter o valor em um número com o tipo primitivo int antes dele.
-
-n = input('Digite algo: ')
-print(n.isalpha())
-# Se ele é letra.
-
-n = input('Digite algo: ')
-print(n.isalnum())
-# Se o valor tem número e letra. Ex: 3a (é alpha numerico)
-
-n = input('Digite algo: ')
-print(n.isupper())
-#Vai analisar se está somente com letras maiusculas.
 
 #---------------------------------------
 #           Operadores Aritméticos
@@ -35,6 +7,22 @@ print(n.isupper())
 #2 - **
 #3 - * / // %
 #4 - + - 
+
+#-----------------------------------------
+
+#           Utilizando módulos
+
+import math 
+#from math import sqrt, floor (importando apenas o que irá ser utilizado que é from sqrt e floor.)
+num = int(input('Digite um número: '))
+raiz = math.sqrt(num)
+print(f'A raiz de {num} é igual a {raiz:.2f}')
+
+import random
+num = random.randint(1, 10)
+print(num)
+
+
 
 
 

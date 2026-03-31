@@ -159,6 +159,46 @@ pagar = (dias * 60) + (km * 0.15)
 
 print(f'O total a pagar é de R${pagar:.2f}')
 
+#Aula 8 - Exercício 1
+
+import math
+numReal = float(input('Digite um número: '))
+num = math.trunc(numReal)
+print(f'O número {numReal} tem a parte inteira {num}')
+
+#Exercício 2
+
+import random
+a1 = input('Primeiro aluno: ')
+a2 = input('Segundo aluno: ')
+a3 = input('Terceiro aluno: ')
+a4 = input('Quarto aluno: ')
+
+lista = [a1, a2, a3, a4]
+escolhido = random.choice(lista)
+
+print(f'Entre seus 4 alunos, o que foi sorteado a apagar o quadro é {escolhido}.')
+
+#Exercício 3
+
+import random
+a1 = input('Primeiro aluno: ')
+a2 = input('Segundo aluno: ')
+a3 = input('Terceiro aluno: ')
+a4 = input('Quarto aluno: ')
+
+lista = [a1, a2, a3, a4]
+random.shuffle(lista)
+
+print('A ordem de apresentação será')
+print(lista)
+
+#Exercício 4
+
+#import pygame
+
+
+
 
 
 
