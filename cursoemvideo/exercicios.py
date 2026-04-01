@@ -199,16 +199,50 @@ print(lista)
 
 #Aula 9 -  Exercício 1
 
-nome = input('Digite seu nome completo: ')
+nome = str(input('Digite seu nome completo: ')).strip()
 
 print(nome.upper())
 print(nome.lower())
-print(len(nome))
-print(nome.split)
+print(len(nome) - nome.count(' '))
+print(nome.find(' '))
 
 #Exercício 2
 
+num = int(input('Digite um número: '))
+u = num // 1 % 10
+d = num // 10 % 10
+c = num // 100 % 10
+m = num // 1000 % 10
+print(f'Analisando o número {num}')
+print(f'Unidade {u}')
+print(f'Dezena {d}')
+print(f'Centena {c}')
+print(f'Milhar {m}')
 
+#Exercício 3
+
+cidade = str(input('Digite o nome da sua cidade aqui: ')).strip()
+print(cidade[:5].upper() == 'Santo')
+
+#Exercício 4
+
+
+
+#Exercício 5
+
+frase = str(input('Digite uma frase:')).upper().strip()
+print(f'A letra A aparece {frase.count('A')}vezes na frase.')
+print(f'A primeira letra A apareceu na posição {frase.find('A')+1}')
+print(f'A última letra A pareceu na posição{frase.rfind('A')+1}')
+
+
+#Exercício 6
+
+n = str(input('Digite seu nome completo: ')).strip()
+nome = n.split()
+print('Muito prazer em te conhecer!')
+print(f'Seu primeiro nome é {nome[0]}')
+print(f'Seu último nome é {nome[len(nome)-1]}')
 
 
 
