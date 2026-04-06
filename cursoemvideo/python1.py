@@ -50,6 +50,20 @@ if media >= 6.0:
 else:
     print('Sua média foi ruim! Estude mais!')
 
+#------------------------------------------
+#           Cores no Terminal
+
+print('\033[1;32;43mOlá mundo!\033[m')
+
+print('\033[0;33;44mOlá mundo!\033[m')
+
+a = 3
+b = 5
+
+print(f'Os valores são \033[32m{a}\033[m e \033[31m{b}\033[m!!')
+
+nome = 'Larissa'
+print(f'Olá! Muito prazer em te conhecer {'\033[4;34m',nome,'\033[m'}!!!')
 
 
 
