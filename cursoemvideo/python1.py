@@ -28,6 +28,28 @@ print(num)
 frase = 'Curso em video Python'
 print(frase.count('o'))
 
+#------------------------------------------
+#             Condições
+
+nome = str(input('Qual seu nome? '))
+
+if nome == 'Larissa':
+    print('Que nome lindo você tem!')
+else:
+    print('Seu nome é tão normal!')
+print(f'Bom dia, {nome}')
+
+n1 = str(input('Digite a primeira nota:'))
+n2 = str(input('Digite a segunda nota:'))
+
+media = (n1 + n2) / 2
+
+print(f'A sua média foi {media:1f}')
+if media >= 6.0:
+    print('Sua média foi boa! Parabéns!')
+else:
+    print('Sua média foi ruim! Estude mais!')
+
 
 
 

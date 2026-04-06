@@ -244,6 +244,75 @@ print('Muito prazer em te conhecer!')
 print(f'Seu primeiro nome é {nome[0]}')
 print(f'Seu último nome é {nome[len(nome)-1]}')
 
+# Aula 10 - Exercício 1
+
+from random import randint
+from time import sleep
+computador = randint(0, 5) #Faz o pc pensar
+print('-=-' * 10)
+print('Vou pensar em um número entre 0 e 5. Tente adivinhar!')
+print('-=-' * 20)
+jogador = int(input('Em que número eu pensei? '))#Jogador tenta adivinhar
+print('Processando...')
+sleep(3)
+if jogador == computador:
+    print('Parabêns, você conseguiu me vencer!')
+else:
+    print(f'Ganhei! Eu pensei no número {computador} e não no {jogador}')
+
+#Exercício 2
+
+velocidadeCar = float(input('Digite aqui a velocidade do carro: '))
+
+multa = (velocidadeCar - 80) * 7
+
+if (velocidadeCar > 80):
+    print(f'Você foi multado! A multa vai custar R$ 7,00 por cada Km acima do limite. Então sua multa é de {multa}')
+
+#Exercício 3
+
+n = int(input('Digite um número: '))
+resultado = n % 2
+
+if resultado == 0:
+    print(f'O número {n} é par')
+else:
+    print(f'O número {n} é impar.')
+
+#Exercício 4
+
+viagem = float(input('Qual a distância de uma viagem em KM? '))
+
+curta = viagem * 0.50
+longa = viagem * 0.45
+
+if(viagem <= 200):
+    print(f'Se a viagem for de até 200km, será cobrado 0,50 por km. O valor a ser pago em sua viagem é de {curta}')
+else:
+    print(f'Viagem longa, terá um custo de {longa:.2f}')
+
+#Exercício 5
+
+ano = int(input('Que ano quer analisar: '))
+if ano % 4 == 0:
+    print(f'O ano {ano} é bissexto.')
+else:
+    print(f'O ano {ano} não é bissexto.')
+
+
+#Exercício 6
+
+s = float(input('Qual seu salário: '))
+
+if (s <= 1.250):
+    novo = s + (s * 15 / 100)
+else:
+    novo = s + (s * 10 / 100)
+print(f'Quem ganhava R${s:.2f} passa a ganhar R${novo:.2f}.')
+
+
+
+
 
 
 
