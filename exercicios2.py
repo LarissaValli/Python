@@ -1,6 +1,6 @@
 #Aula 12- Exercício 1
 
-casa = float(input('Qual o valor da casa?'))
+casa = float(input('Qual o valor da casa? R$: '))
 salario = float(input('Informe o valor do salário do comprador R$: '))
 anos = int(input('Quantos anos de financiamento?'))
 
@@ -16,6 +16,19 @@ else:
 #Exercício 2
 
 n = int(input('Digite um número: '))
+print('''Escolha uma das bases para conversão:
+[1] binário
+[2] octal
+[3]hexadecimal''')
+opcao = int(input('Sua opção:'))
+if opcao == 1:
+    print(f'{n} convertido para binário é igual a {bin(n)[2:]}')
+elif opcao == 2:
+    print(f'{n} convertido para octal é igual a {oct(n)[2:]}')
+elif opcao == 3:
+    print(f'{n} convertido para hexadecimal é igual a {hex(n)[2:]}')
+else:
+    print('Opção inválida! Tente novamente!')
 
 #Exercício 3
 
@@ -31,16 +44,26 @@ else:
 
 #Exercício 4
 
-ano = int(input('Digite o ano de nascimento: '))
+from datetime import date
 
-idade = ano - 2026
+atual = date.today().year
+nasc = int(input('Digite o ano de nascimento, para saber se deve ou não se alistar: '))
 
-if idade < 18:
-    print('Você é menor de idade! Não precisa se alistar ainda!')
-elif idade >= 18:
-    print('Você é maior de idade! Já pode se alistar!')
-else:
-    print('Já passou da idade de alistamento!')
+idade = atual - nasc
+
+if idade == 18:
+    print('Você tem que se alistar imediatamente!')
+elif idade < 18:
+    saldo = 18 - idade
+    print(f'Ainda faltam {saldo} anos para o alistamento!')
+    ano = atual + saldo
+    print(f'Seu alistamento será em {ano}!')
+elif idade > 18:
+    saldo = idade - 18
+    print(f'Você já deveria ter se alistado há {saldo} anos!')
+    ano = atual - saldo
+    print(f'Seu alistamento foi em {ano}!')
+
 
 #Exercício 5
 
@@ -49,9 +72,11 @@ n2 = float(input('Digite a segunda nota:'))
 
 media = (n1 + n2) / 2
 
+print(f'A média entre {n1:.1f} e {n2:.1f}, é {media:.1f}')
+
 if media < 5.0:
     print('Aluno reprovado!')
-elif media >= 5.0 and media >= 6.9:
+elif media >= 5.0 and media <= 6.9:
     print('Aluno em recuperação!')
 elif media >= 7.0:
     print('Aluno aprovado!')
