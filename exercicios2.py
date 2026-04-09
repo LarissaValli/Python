@@ -189,6 +189,9 @@ elif computador == 2: #Tesoura
     else:
         print('Opção inválida!')
 
+#Aula 13 - Exercício 1
+#
+
 
 
 
