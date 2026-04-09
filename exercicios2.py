@@ -86,17 +86,19 @@ elif media >= 7.0:
 ano = int(input('Digite o ano de nascimento:'))
 
 idade = 2026 - ano
+print(f'O atleta tem {idade} anos!')
 
 if idade <= 9:
     print('Mirim')
-elif idade < 9 and idade >= 14:
+elif idade <= 14:
     print('Infantil')
-elif idade <= 14 and idade >= 19:
+elif idade <= 19:
     print('Junior')
-elif idade <= 19 and idade >= 20:
+elif idade <= 25:
     print('Sênior')
 else:
     print('Master')
+
 
 #Exercício 7
 
@@ -107,11 +109,11 @@ imc = peso / (altura **2)
 
 if imc < 18.5:
     print('Abaixo do peso!')
-elif imc < 18.5 and imc >= 25:
+elif 18.5 <= imc < 25:
     print('Peso ideal!')
-elif imc < 25 and imc >= 30:
+elif 25 <= imc < 30:
     print('Sobrepeso!')
-elif imc < 30 and imc >= 40:
+elif 30 <= imc < 40:
     print('Obesidade!')
 else:
     print('Obesidade mórbida!')
@@ -119,22 +121,87 @@ else:
 #Exercício 8
 
 produto = float(input('Qual o preço do produto? R$:'))
+preço = float(input('Preço das compras R$: '))
+print('''Escolha a forma de pagamento:
+[1] à vista dinheiro/cheque
+[2] à vista cartão
+[3] 2x no cartão
+[4] 3x ou mais no cartão''')
 
-dinheiroCheque = produto - (produto * 10 / 100)
-dinheiro = produto - (produto * 5 / 100)
-cartao2x = produto
-cartao3x = produto + (produto * 20 / 100)
+opcao = int(input('Qual é a sua opção? '))
 
-if produto == dinheiroCheque:
-    print(f'O valor do produto é R$: {produto} com o desconto de 10% para pagamento à vista no cheque ou cartão, fica R$: {dinheiroCheque} ')
-elif produto ==dinheiro:
-    print(f'O valor do produto é R$: {produto} com o desconto de 5% para pagamento à vista em dinheiro, fica R$: {dinheiro} ')
-elif produto == cartao2x:
-    print(f'O produto tem preço normal')
-elif produto == cartao3x:
-    print(f'O valor do produto é R$: {produto} com o acréscimo de 20% para pagamento em 3x no cartão, fica R$: {cartao3x} ')
+if opcao == 1:
+    total = preço - (preço * 10 / 100)
+elif opcao == 2:
+    total = preço - (preço * 5 / 100)
+    print(f'Sua compra de R${preço:.2f} vai custar R${total:.2f} no final.')
+elif opcao == 3:
+    total = preço
+    parcela = total / 2
+    print(f'Sua compra será parcelada em 2x de R${parcela:.2f} SEM JUROS!')
+elif opcao == 4:
+    total = preço + (preço * 20 / 100)
+    parcela = total / 3
+    print(f'Sua compra será parcelada em 3x de R${parcela:.2f} COM JUROS!')
 
 #Exercício 9
+
+from random import randint
+itens = ('Pedra', 'Papel', 'Tesoura')
+computador = randint(0, 2)
+print('''Suas opções:
+[0] Pedra
+[1] Papel
+[2] Tesoura''')
+jogador = int(input('Qual é a sua jogada? '))
+print('-=' * 11)
+print(f'Computador jogou {itens[computador]}')
+print(f'Jogador jogou {itens[jogador]}')
+print('-=' * 11)
+
+if computador == 0: #Pedra
+    if jogador == 0:
+        print('EMPATE!')
+    elif jogador == 1:
+        print('JOGADOR VENCE!')
+    elif jogador == 2:
+        print('COMPUTADOR VENCE!')
+    else:
+        print('Opção inválida!')
+
+elif computador == 1: #Papel
+    if jogador == 0:
+        print('COMPUTADOR VENCE!')
+    elif jogador == 1:
+        print('EMPATE!')
+    elif jogador == 2:
+        print('JOGADOR VENCE!')
+    else:
+        print('Opção inválida!')
+
+elif computador == 2: #Tesoura
+    if jogador == 0:
+        print('JOGADOR VENCE!')
+    elif jogador == 1:
+        print('COMPUTADOR VENCE!')
+    elif jogador == 2:
+        print('EMPATE!')
+    else:
+        print('Opção inválida!')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
