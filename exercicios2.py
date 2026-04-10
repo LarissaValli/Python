@@ -190,7 +190,105 @@ elif computador == 2: #Tesoura
         print('Opção inválida!')
 
 #Aula 13 - Exercício 1
-#
+
+from time import sleep
+for c in range(10, -1, -1):
+    print(f'Contagem regressiva: {c}')
+    sleep(1)
+print('Feliz ano novo!')
+
+#Exercício 2
+
+for c in range(1, 51, 2):
+    print(c, end=' ')
+print('Fim')
+
+#Exercício 3
+
+soma = 0
+cont = 0
+for c in range(1, 501, 2):
+    if c % 3 == 0:
+        cont = cont + 1
+        soma = soma + c
+print(f'A soma de todos os números ímpares {cont} múltiplos de 3, entre 1 e 500 é {soma}!')
+
+#Exercício 4
+
+n = int(input('Digite um número para ver sua tabuada: '))
+
+for c in range(1, 11):
+    print(f'{n} x {c:2} = {n * c}')
+print('Fim')
+
+#Exercício 5
+
+soma = 0
+cont = 0
+for c in range(1, 7):
+    n = int(input(f'Digite um valor: {c}'))
+    if n % 2 == 0:
+        soma += n
+        cont += 1
+print(f'Você informou {cont} números pares e a soma entre eles foi {soma}!')
+
+#Exercício 6
+
+primeiro =int(input('Primeiro termo: '))
+razao = int(input('Razão: '))
+decimo = primeiro + (10 - 1) * razao
+for c in range(primeiro, decimo, razao):
+    print(f'{c}', end=' > ')
+print('Fim')
+
+#Exercício 7
+
+n = int(input('Digite um número: '))
+tot = 0
+for c in range(1, n + 1):
+    if n % c == 0:
+        print('\033[33m]', end=' ')
+        tot += 1
+    else:
+        print('\033[31m]', end=' ')
+    print(f'{c}', end=' ')
+print(f'O número {n} foi divisível {tot} vezes!')
+
+#Exercício 8
+
+frase = str(input('Digite uma frase: ')).strip().upper()
+palavras = frase.split()
+junto = ''.join(palavras)
+inverso = ''
+for letra in range(len(junto) - 1, -1, -1):
+    inverso += junto[letra]
+print(f'O inverso de {junto} é {inverso}')
+if inverso == junto:
+    print('Temos um palíndromo!')
+else:
+    print('A frase digitada não é um palíndromo!')
+
+#Exercício 9
+from datetime import date
+atual = date.today().year
+totmaior = 0
+totmenor = 0
+for pess in range(1, 8):
+    nasc = int(input(f'Em que ano a {pess} pessoa nasceu?'))
+    idade = atual - nasc
+    print(f'Essa pessoa tem {idade} anos!')
+    if idade >= 21:
+        totmaior += 1
+    else:
+        totmenor += 1
+print(f'Ao todo tivemos {totmaior} pessoas maiores de idade!')
+print(f'E também tivemos {totmenor} pessoas menores de idade!')
+
+
+
+
+
+
 
 
 
