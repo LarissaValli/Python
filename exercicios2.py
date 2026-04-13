@@ -284,6 +284,10 @@ for pess in range(1, 8):
 print(f'Ao todo tivemos {totmaior} pessoas maiores de idade!')
 print(f'E também tivemos {totmenor} pessoas menores de idade!')
 
+# Aula 14 - Exercício 1
+
+
+
 
 
 
