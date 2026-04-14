@@ -286,6 +286,68 @@ print(f'E também tivemos {totmenor} pessoas menores de idade!')
 
 # Aula 14 - Exercício 1
 
+sexo = str(input('Informe seu sexo: [M/F]')).strip().upper()[0]
+while sexo not in 'MmFf':
+    sexo = str(input('Dados inválidos. Por favor, informe seu sexo: ')).strip().upper()[0]
+print(f'Sexo {sexo} registrado com sucesso!')
+
+#Exercício 2
+
+from time import sleep
+n1 = int(input('Primeiro valor: '))
+n2 = int(input('Segundo valor: '))
+opcao = 0
+while opcao != 5:
+    print('''Escolha a opção desejada:
+    [1] Somar
+    [2] Multiplicar
+    [3] Maior)
+    [4] Novos números
+    [5] Sair do programa''')
+    opcao = int(input('Qual é a sua opção? '))
+    if opcao == 1:
+        soma = n1 + n2
+        print(f'A soma entre {n1} e {n2} é igual a {soma}!')
+    elif opcao == 2:
+        produto = n1 * n2
+        print(f'O resultado de {n1} x {n2} é igual a {produto}!')
+    elif opcao == 3:
+        if n1 > n2:
+            maior = n1
+        else:
+            maior = n2
+        print(f'Entre {n1} e {n2} o maior é {maior}!')
+    elif opcao == 4:
+        print('Informe os números novamente: ')
+        n1 = int(input('Primeiro valor: '))
+        n2 = int(input('Segundo valor: '))
+    elif opcao == 5:
+        print('Finalizando...')
+    else:
+        print('Opção inválida! Tente novamente!')
+    print('=-=' * 10)
+    sleep(2)
+print('Fim do programa! Volte sempre!')
+
+#Exercício 3
+
+n = int(input('Digite um número para calcular seu fatorial: '))
+c = n
+f = 1
+print(f'Calculando {n}! = ', end='')
+while c > 0:
+    print(f'{c}', end=' ')
+    print(' x ' if c > 1 else ' = ', end=' ')
+    f *= c
+    c -= 1
+print(f'{f}')
+
+
+
+
+
+
+    
 
 
 
