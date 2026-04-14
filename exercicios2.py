@@ -342,6 +342,29 @@ while c > 0:
     c -= 1
 print(f'{f}')
 
+#Exercício YouTube
+
+n = 0
+while n <= 10:
+    print(f'O número é {n}')
+    n += 1
+#-----------------------------------
+n = int(input('Digite um número para fazer a tabuada: '))
+for c in range(1, 11):
+    print(f'{n} x {c:2} = {n * c}')
+print('Fim')
+#------------------------------------
+palavra = str(input('Digite uma palavra ou frase: '))
+v = 0
+vogais = 'AEIOUaeiou'
+for letras in palavra:
+    if letras in vogais:
+        v += 1
+print(f'A palavra {palavra} tem {v} vogais!')
+#------------------------------------
+#Escreva a tabuada de 1 a 100
+
+
 
 
 
