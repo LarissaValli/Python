@@ -364,6 +364,34 @@ print(f'A palavra {palavra} tem {v} vogais!')
 #------------------------------------
 #Escreva a tabuada de 1 a 100
 
+#-------------------------------------
+nome = str(input('Qual seu nome? ')) #
+print(f'Olá {nome}, seja bem-vindo a Turmalina!') #
+
+p = float(input('Digite o preço do produto R$: ')) #
+qtd = int(input('Digite a quantidade do produto: ')) #
+
+total = p * qtd #
+print(f'O total a pagar é de R${total:.2f}!') #
+
+valor_total = total
+
+if valor_total < 2500:
+    print(f'O valor total da compra é de R${valor_total:.2f} e não tem nenhum desconto!')
+
+elif valor_total >= 2500 and valor_total < 6000:
+    desconto1 = valor_total - (valor_total * 4 / 100)
+    print(f'O valor total da compra é de R$ {valor_total:.2f} e você teve um desconto de 4%, o valor final ficou R${desconto1:.2f}!')
+
+elif valor_total >= 6000 and valor_total < 10000:
+    desconto2 = valor_total - (valor_total * 7 / 100)
+    print(f'O valor total da compra é de R$ {valor_total:.2f} e você teve um desconto de 7%, o valor final ficou R${desconto2:.2f}!')
+
+elif valor_total <= 10000:
+    desconto3 = valor_total - (valor_total * 11 / 100)
+    print(f'O valor total da compra é de R$ {valor_total:.2f} e você teve um desconto de 11%, o valor final ficou R${desconto3:.2f}!')
+print('Volte sempre!')
+
 
 
 
