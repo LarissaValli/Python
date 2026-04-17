@@ -392,6 +392,35 @@ elif valor_total <= 10000:
     print(f'O valor total da compra é de R$ {valor_total:.2f} e você teve um desconto de 11%, o valor final ficou R${desconto3:.2f}!')
 print('Volte sempre!')
 
+#-----------------------------------------
+#1) Mostre na tela os números de 1 a 10 usando while.
+soma = 0
+n = 1
+while n <= 10:
+    print(f'Número: {n}')
+    soma += n
+    n += 1
+
+#2) Mostre na tela os números de 1 a 10 usando for.
+for i in range(1, 11):
+    print(f'Número: {i}')
+
+#3)Peça números ao usuário até ele digitar 0. Mostre a soma total.
+
+soma = 0
+u = int(input('Digite um número: '))
+while u != 0:
+    soma += u
+    u = int(input('Digite outro número(Digite 0 para parar): '))
+print(f'A soma total dos número digitados é {soma}!')
+
+#4) Peça números até digitar 0 e mostre: Quantos números foram digitados.
+
+
+
+
+
+
 
 
 
