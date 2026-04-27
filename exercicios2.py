@@ -416,8 +416,52 @@ print(f'A soma total dos número digitados é {soma}!')
 
 #4) Peça números até digitar 0 e mostre: Quantos números foram digitados.
 
+#--------------------------------------
 
+i = 3
+while (i < 13):
+    print(i)
+    i += 1
 
+for i in range(1, 13, 1):
+    print(i)
+
+for i in range (0, 9, 2):
+    print(i)
+
+i = 0
+while (i <= 0):
+    print(i)
+    i += 1
+
+#-------------------------------
+print('LANCHONETE')
+print('''Coxinha R$ 5,00
+Pastel R$ 7,00
+Café R$ 4,00
+Suco R$ 6,00
+Sair''')
+total = 0
+while True:
+    op = int(input('Qual item gostaria de comprar?'))
+    if(op == 1):
+        qtd = int(input('Quantas unidades quer comprar?'))
+        total = total + qtd * 5.00
+    elif(op == 2):
+        qtd = int(input('Quantas unidades quer comprar?'))
+        total = total + qtd * 7.00
+    elif(op == 3):
+        qtd = int(input('Quantas unidades quer comprar?'))
+        total = total + qtd * 4.00
+    elif(op == 4):
+        qtd = int(input('Quantas unidades quer comprar?'))
+        total = total + qtd * 6.00
+    elif(op == 5):
+        break
+    else:
+        print('Produto inválido, selecione novamente!')
+print(f'O total a ser gasto neste pedido é de R$ {total}')
+#---------------------------------------
 
 
 
