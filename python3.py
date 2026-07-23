@@ -26,3 +26,51 @@ print(lanche) #Imprimindo a lista atualizada
 #Para saber se um elemento está na lista e se estiver, ele irá ser removido. Caso contrário, ele não fará nada.
 if "pizza" in lanche:
     lanche.remove("pizza") #Removendo o elemento "pizza" da lista   
+
+valores = list(range(4, 11)) #Criando uma lista com os valores de 4 a 10
+
+valores = [8, 2, 5, 4, 9, 3, 0] #Criando uma lista com valores aleatórios
+valores.sort() #Ordenando a lista em ordem crescente
+valores.sort(reverse=True) #Ordenando a lista em ordem decrescente
+len(valores) #Retorna o tamanho da lista
+
+#-----------------------------------------
+
+#Exercício com professor
+
+num = [2, 5, 9 , 1]
+num[2] = 3
+num.append(7)
+num.sort(reverse=True)
+num.insert(2, 2)
+if 4 in num:
+    num.remove(5)
+else:
+    print('Não achei o número 5')
+print(num)
+print(f'Essa lista tem {len(num)} elementos.')
+
+valores = []
+valores.append(5)
+valores.append(9)
+valores.append(4)
+
+for c, v in enumerate(valores):
+    print(f'Na posição {c} encontrei o valor {v}!')
+print('Cheguei ao final da lista.')
+
+
+valores = list()
+for cont in range(0,5):
+    valores.append(int(input('Digite um valor: ')))
+
+for c, v in enumerate(valores):
+    print(f'Na posição {c} encontrei o valor {v}!')
+print('Cheguei ao final da lista.')
+
+a = [2, 3, 4, 7]
+b = a[:] #Copia a lista A para a lista B
+b[2] = 8
+
+print(f'Lista A: {a}')
+print(f'Lista B: {b}')
