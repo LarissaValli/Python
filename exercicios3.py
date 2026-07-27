@@ -107,6 +107,9 @@ for simb in expr:
             pilha.append(')')
             break
 
+#------------------------------------------
+#Praticando com listas (parte 2)
+#1) 
 
 
 
