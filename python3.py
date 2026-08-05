@@ -76,7 +76,7 @@ print(f'Lista A: {a}')
 print(f'Lista B: {b}')
 
 #------------------------------------------
-#Listas (Parte 2)
+#Listas (Parte 2)]
 
 teste = list()
 teste.append('Gustavo')
